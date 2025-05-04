@@ -1,16 +1,25 @@
-# pets_go
+# 🐾 PetsGo - Red Social Integral para Mascotas  
+### *Proyecto Competidor en InnovateC 2025* 🏆🚀  
 
-A new Flutter project.
+---
 
-## Getting Started
+## 📌 Visión del Proyecto  
+**PetsGo** es una plataforma social innovadora que conecta dueños de mascotas con proveedores de servicios (veterinarios, paseadores, entrenadores) y una comunidad apasionada por el bienestar animal.  
 
-This project is a starting point for a Flutter application.
+**Competencia:** InnovateC 2025 - Categoría *Tecnología para el Bienestar Social*  
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ✨ Características Principales  
+- � **Perfiles sociales** para mascotas con geolocalización  
+- 🏥 **Directorio de veterinarios** con sistema de calificaciones  
+- 🚶 **Paseadores verificados** y agenda integrada  
+- 📚 **Blog educativo** con contenido de expertos  
+- 🔍 **Búsqueda inteligente** por ubicación y servicios  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🛠 Tecnologías Utilizadas  
+```dart
+// Core del proyecto
+- Frontend: Flutter 3.0 (Material 3)
