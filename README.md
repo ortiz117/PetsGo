@@ -11,11 +11,9 @@
 ---
 
 ## ✨ Características Principales  
-- � **Perfiles sociales** para mascotas con geolocalización  
+- � **Perfiles sociales**  
 - 🏥 **Directorio de veterinarios** con sistema de calificaciones  
-- 🚶 **Paseadores verificados** y agenda integrada  
-- 📚 **Blog educativo** con contenido de expertos  
-- 🔍 **Búsqueda inteligente** por ubicación y servicios  
+- 🚶 **Paseadores verificados** y agenda integrada    
 
 ---
 
