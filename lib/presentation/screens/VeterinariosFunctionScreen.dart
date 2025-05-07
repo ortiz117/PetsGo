@@ -41,7 +41,7 @@ class _VeterinariosFunctionState extends State<VeterinariosFunctionScreen> {
           IconButton(
             icon: const Icon(Icons.search),
             onPressed: () {
-              // Acción de búsqueda (para cuando la implementes)
+              // Acción de búsqueda
             },
           ),
         ],
@@ -62,7 +62,7 @@ class _VeterinariosFunctionState extends State<VeterinariosFunctionScreen> {
                   onSelected: (bool value) {
                     setState(() {
                       selectedFiltro = filtro;
-                      // Aquí puedes aplicar la lógica de filtrado si deseas
+                      //  lógica de filtrado
                     });
                   },
                 );

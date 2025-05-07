@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pets_go/presentation/screens/AdopcionFunctionScreen.dart';
 import 'package:pets_go/presentation/screens/HistorialMedicoScreen.dart';
 import 'package:pets_go/presentation/screens/PaseadoresFunctionScreen.dart';
+import 'package:pets_go/presentation/screens/ServiciosFunebresScreen.dart';
 import 'package:pets_go/presentation/screens/SpaFunctionScreen.dart';
 import 'package:pets_go/presentation/screens/VeterinariosFunctionScreen.dart';
 
@@ -69,6 +70,14 @@ class CustomDrawer extends StatelessWidget {
             icon: Icons.pets,
             text: 'Adopciones',
             route: const AdopcionScreen(),
+          ),
+          const Divider(),
+          _buildSectionTitle('Servicios Funebres'),
+          _buildMenuItem(
+            context,
+            icon: Icons.local_florist,
+            text: 'Accede a los Servicios Funebres locales',
+            route: const ServiciosFunerariosScreen(),
           ),
         ],
       ),
@@ -163,7 +172,7 @@ class CustomDrawer extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {
                   Navigator.pop(context);
-                  // Aquí iría la lógica de verificación
+                  //lógica de verificación
                 },
                 child: const Text('Continuar'),
               ),

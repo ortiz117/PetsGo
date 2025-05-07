@@ -136,17 +136,14 @@ class PostDetailScreen extends StatelessWidget {
 
   // Método para manejar URLs problemáticas
   ImageProvider _safeNetworkImage(String url) {
-    // Si la URL es de placekitten.com, usa una URL alternativa
     if (url.contains('placekitten.com')) {
       return const NetworkImage('https://picsum.photos/200');
     }
 
-    // Verifica si la URL es válida
     try {
       Uri.parse(url);
       return NetworkImage(url);
     } catch (e) {
-      // Si la URL no es válida, usa una imagen alternativa
       return const NetworkImage('https://picsum.photos/200');
     }
   }

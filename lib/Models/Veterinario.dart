@@ -2,8 +2,8 @@ class Veterinario {
   String nombre;
   String especialidad;
   String descripcion;
-  String? imagen; // Esta propiedad ya la tienes
-  int calificacion; // Y esta también
+  String? imagen;
+  int calificacion;
   double tarifaHora;
 
   Veterinario({
@@ -11,11 +11,10 @@ class Veterinario {
     required this.especialidad,
     required this.descripcion,
     required this.tarifaHora,
-    this.imagen, // Recibe la imagen en el constructor
+    this.imagen,
     this.calificacion = 0,
   });
 
-  // Método para crear una lista de veterinarios de ejemplo
   static List<Veterinario> veterinariosEjemplo() {
     return [
       Veterinario(
@@ -24,9 +23,8 @@ class Veterinario {
         descripcion:
             'Especializado en cardiología animal con más de 10 años de experiencia. Graduado de la Universidad Nacional.',
         tarifaHora: 200.00,
-        imagen:
-            'https://picsum.photos/seed/drmartinez/100/100', // <-- AQUÍ asignas la URL
-        calificacion: 5, // Ejemplo de calificación inicial
+        imagen: 'https://picsum.photos/seed/drmartinez/100/100',
+        calificacion: 5,
       ),
       Veterinario(
         nombre: 'Dra. García',
@@ -34,8 +32,7 @@ class Veterinario {
         descripcion:
             'Experta en problemas de piel y alergias en mascotas. Realizó sus estudios de posgrado en España.',
         tarifaHora: 200.00,
-        imagen:
-            'https://picsum.photos/seed/dragarcia/100/100', // <-- AQUÍ asignas la URL
+        imagen: 'https://picsum.photos/seed/dragarcia/100/100',
         calificacion: 4,
       ),
       Veterinario(
@@ -44,8 +41,7 @@ class Veterinario {
         descripcion:
             'Especialista en cirugías de tejidos blandos y ortopedia. Ha realizado más de 500 cirugías exitosas.',
         tarifaHora: 200.00,
-        imagen:
-            'https://picsum.photos/seed/drlopez/100/100', // <-- AQUÍ asignas la URL
+        imagen: 'https://picsum.photos/seed/drlopez/100/100',
         calificacion: 5,
       ),
       Veterinario(
@@ -54,8 +50,7 @@ class Veterinario {
         descripcion:
             'Especialista en problemas oculares en animales pequeños y exóticos. Miembro de la asociación internacional.',
         tarifaHora: 200.00,
-        imagen:
-            'https://api.dicebear.com/7.x/personas/svg?seed=drodriguez', // <-- O usando DiceBear
+        imagen: 'https://api.dicebear.com/7.x/personas/svg?seed=drodriguez',
         calificacion: 4,
       ),
       Veterinario(
@@ -63,8 +58,7 @@ class Veterinario {
         especialidad: 'Generalista',
         descripcion: 'Consulta general, vacunas, desparasitación.',
         tarifaHora: 100.00,
-        imagen:
-            'https://api.dicebear.com/7.x/personas/svg?seed=drpet', // <-- Otro ejemplo con DiceBear
+        imagen: 'https://api.dicebear.com/7.x/personas/svg?seed=drpet',
         calificacion: 5,
       ),
     ];

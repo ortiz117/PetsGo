@@ -34,7 +34,7 @@ class _MenuFunctionScreenState extends State<MenuFunctionScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'PetsGo',
+          'PetGo',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,

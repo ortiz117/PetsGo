@@ -53,7 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Icon(Icons.pets, size: 80, color: Colors.purple[400]),
                 const SizedBox(height: 16),
                 const Text(
-                  'Bienvenido a PetsGo',
+                  'Bienvenido a PetGo',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 24,

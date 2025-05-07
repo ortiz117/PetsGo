@@ -22,10 +22,7 @@ class AppBackground extends StatelessWidget {
             ),
           ),
         ),
-
-        // Círculos decorativos (opcionales)
         if (withBubbles) ...[
-          // Burbuja superior derecha
           Positioned(
             top: -50,
             right: -50,
@@ -39,7 +36,6 @@ class AppBackground extends StatelessWidget {
             ),
           ),
 
-          // Burbuja inferior izquierda
           Positioned(
             bottom: -100,
             left: -100,
@@ -53,7 +49,6 @@ class AppBackground extends StatelessWidget {
             ),
           ),
 
-          // Burbuja adicional para más detalle visual
           Positioned(
             top: 100,
             left: -30,
@@ -67,8 +62,6 @@ class AppBackground extends StatelessWidget {
             ),
           ),
         ],
-
-        // Contenido de la pantalla
         child,
       ],
     );
