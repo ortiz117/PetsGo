@@ -1,4 +1,4 @@
-# 🐾 PetsGo - Red Social Integral para Mascotas  
+# 🐾 PetGo - Red Social Integral para Mascotas  
 ### *Proyecto Competidor en InnovateC 2025* 🏆🚀  
 
 ---
