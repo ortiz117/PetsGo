@@ -4,9 +4,9 @@
 ---
 
 ## 📌 Visión del Proyecto  
-**PetsGo** es una plataforma social innovadora que conecta dueños de mascotas con proveedores de servicios (veterinarios, paseadores, entrenadores) y una comunidad apasionada por el bienestar animal.  
+**PetGo** es una plataforma social innovadora que conecta dueños de mascotas con proveedores de servicios (veterinarios, paseadores, entrenadores) y una comunidad apasionada por el bienestar animal.  
 
-**Competencia:** InnovateC 2025 - Categoría *Tecnología para el Bienestar Social*  
+**Competencia:** InnovateC 2025
 
 ---
 
