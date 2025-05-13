@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pets_go/Data/serviciosFunebres.dart';
+import 'package:pets_go/Widgets/agendar_cita_dialog.dart';
 
 class ServiciosFunerariosScreen extends StatefulWidget {
   const ServiciosFunerariosScreen({super.key});
@@ -96,11 +97,20 @@ class _ServiciosFunerariosScreenState extends State<ServiciosFunerariosScreen> {
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Función para agendar cita próximamente'),
-            ),
-          );
+          if (selectedIndex == -1) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Selecciona un paquete antes de agendar'),
+              ),
+            );
+          } else {
+            final paqueteSeleccionado = serviciosFunebres[selectedIndex].titulo;
+            showDialog(
+              context: context,
+              builder:
+                  (context) => AgendarCitaDialog(paquete: paqueteSeleccionado),
+            );
+          }
         },
         icon: const Icon(Icons.calendar_month),
         label: const Text('Agendar Cita'),

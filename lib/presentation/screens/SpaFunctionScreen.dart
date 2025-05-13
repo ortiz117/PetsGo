@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pets_go/Models/Generic_Card.dart';
 import 'package:pets_go/Models/spa_service.dart';
 import 'package:pets_go/Widgets/FilterGeneric.dart';
+import 'package:pets_go/Widgets/agendar_cita_dialog.dart';
 
 class SpaFunctionScreen extends StatefulWidget {
   const SpaFunctionScreen({super.key});
@@ -41,7 +42,7 @@ class _SpaFunctionState extends State<SpaFunctionScreen> {
           IconButton(
             icon: const Icon(Icons.search),
             onPressed: () {
-              // Acción de búsqueda (para cuando se implemente)
+              // Acción de búsqueda
             },
           ),
         ],
@@ -62,7 +63,6 @@ class _SpaFunctionState extends State<SpaFunctionScreen> {
                   onSelected: (bool value) {
                     setState(() {
                       selectedFiltro = filtro;
-                      // Aplicar lógica de filtrado si es necesario
                     });
                   },
                 );
@@ -131,7 +131,15 @@ class _SpaFunctionState extends State<SpaFunctionScreen> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder:
+                        (context) => AgendarCitaDialog(
+                          paquete: servicios[selectedSpaIndex!].name,
+                        ),
+                  );
+                },
               )
               : null,
     );

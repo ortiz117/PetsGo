@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pets_go/Models/Generic_Card.dart';
 import 'package:pets_go/Models/Paseador.dart';
 import 'package:pets_go/Widgets/FilterGeneric.dart';
+import 'package:pets_go/Widgets/agendar_cita_dialog.dart';
 
 class PaseadoresFunctionScreen extends StatefulWidget {
   const PaseadoresFunctionScreen({super.key});
@@ -121,7 +122,18 @@ class _PaseadoresFunctionState extends State<PaseadoresFunctionScreen> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder:
+                        (context) => AgendarCitaDialog(
+                          paquete:
+                              selectedPaseadorIndex != null
+                                  ? paseadores[selectedPaseadorIndex!].nombre
+                                  : '',
+                        ),
+                  );
+                },
               )
               : null,
     );

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pets_go/Models/Generic_Card.dart';
 import 'package:pets_go/Models/Veterinario.dart';
 import 'package:pets_go/Widgets/FilterGeneric.dart';
+import 'package:pets_go/Widgets/agendar_cita_dialog.dart';
 
 class VeterinariosFunctionScreen extends StatefulWidget {
   const VeterinariosFunctionScreen({super.key});
@@ -135,7 +136,17 @@ class _VeterinariosFunctionState extends State<VeterinariosFunctionScreen> {
                   borderRadius: BorderRadius.circular(12),
                 ),
                 onPressed: () {
-                  // Acción para agendar consulta
+                  showDialog(
+                    context: context,
+                    builder:
+                        (context) => AgendarCitaDialog(
+                          paquete:
+                              selectedVeterinarioIndex != null
+                                  ? veterinarios[selectedVeterinarioIndex!]
+                                      .nombre
+                                  : 'Veterinario',
+                        ),
+                  );
                 },
               )
               : null,
