@@ -19,5 +19,4 @@
 
 ## 🛠 Tecnologías Utilizadas  
 ```dart
-// Core del proyecto
 - Frontend: Flutter 3.0 (Material 3)
